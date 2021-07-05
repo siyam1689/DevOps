@@ -1,6 +1,6 @@
 Assignment-Class2
 -----------------
-Firstly loginto the Centoos Virtual machine from virtual box
+Firstly login to the Centos virtual machine on virtual box.
 
 
 Create index.html file
