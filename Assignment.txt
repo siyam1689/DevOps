@@ -21,17 +21,6 @@ Edit index.html file
 </html>
 
 
-Docker Basic Commends:
----------------------
-# docker pull image_name 		[Pull Docker Image from docker file]
-# docker -ps -a  			[to check docker container]
-# docer rm id/name 			[Remove docker container]
-# docer rm -vf $(docker ps -a -q) 	[To Remove all docker container at a time]
-# docker exec -it id/name sh		[Loging into a container]
-# docker start id/name 			[To start docker container]
-# docker stop id/name 			[To stop docker container]
-
-
 Docker File Create:
 --------------------
 # touch Dockerfile
@@ -53,3 +42,15 @@ Docker Run:
 
 Browse Local Host:
 # localhost:80  [Docker Assignment On Class 2 "This content showen in browser]
+
+
+
+Docker Basic Commends:
+---------------------
+# docker pull image_name 		[Pull Docker Image from docker file]
+# docker -ps -a  			[to check docker container]
+# docer rm id/name 			[Remove docker container]
+# docer rm -vf $(docker ps -a -q) 	[To Remove all docker container at a time]
+# docker exec -it id/name sh		[Loging into a container]
+# docker start id/name 			[To start docker container]
+# docker stop id/name 			[To stop docker container]
