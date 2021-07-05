@@ -1,0 +1,55 @@
+Assignment-Class2
+-----------------
+Firstly loginto the Centoos Virtual machine from virtual box
+
+
+Create index.html file
+----------------------
+# touch index.html
+# vim index.html
+
+Edit index.html file
+--------------------
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+  </head>
+  <body>
+    <p>Docker Assignment On Class 2 </p>
+  </body>
+</html>
+
+
+Docker Basic Commends:
+---------------------
+# docker pull image_name 		[Pull Docker Image from docker file]
+# docker -ps -a  			[to check docker container]
+# docer rm id/name 			[Remove docker container]
+# docer rm -vf $(docker ps -a -q) 	[To Remove all docker container at a time]
+# docker exec -it id/name sh		[Loging into a container]
+# docker start id/name 			[To start docker container]
+# docker stop id/name 			[To stop docker container]
+
+
+Docker File Create:
+--------------------
+# touch Dockerfile
+# vim Dockerfile
+	FROM ubuntu
+	RUN apt update -y
+	RUN apt install ngnix -y
+	COPY ./index.html /var/www/html
+CMD ["ngnix", "-g", "daemon off;"]
+
+
+Docker File Build:
+------------------
+# docker build -t siyam .
+
+Docker Run:
+-----------
+# docker run -p 80:80 siyam
+
+Browse Local Host:
+# localhost:80  [Docker Assignment On Class 2 "This content showen in browser]
